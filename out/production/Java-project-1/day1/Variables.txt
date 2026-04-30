@@ -1,0 +1,7 @@
+Naming Rules and Conventions
+
+Must start with a letter, underscore (_), or dollar sign ($).
+Cannot contain whitespace or special characters (except _ and $).
+Cannot be a reserved Java keyword (e.g., class, void, int).
+Case-sensitive: myVar and myvar are distinct variables.
+Convention: Use camelCase for regular variables (e.g., totalAmount) and UPPER_CASE with underscores for constants (e.g.,

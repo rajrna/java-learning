@@ -1,0 +1,19 @@
+Arithmetic Operators
++
+-
+*
+/
+
+Relational Operators
+>
+<
+==
+>=
+<=
+!=
+
+Conditional Operators
+&&
+||
+Ternary Operator  ?:
+
