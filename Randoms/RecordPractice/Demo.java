@@ -17,6 +17,10 @@ public class Demo {
         BankTransaction tx2 = new BankTransaction("TXN-001", "Coffee shop", -4.50, LocalDate.now(), List.of("food", "daily"));
         tx.equals(tx2);
 
+        User user1 = new User(101,"Alice", "akuce@example.comn");
+
+        System.out.println(user1.name());
+
         System.out.println(tx);
 
         List<BankTransaction> transactions = List.of(tx,tx2);
