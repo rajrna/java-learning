@@ -1,0 +1,56 @@
+package DSA;
+
+public class DynamicArray {
+
+    private int[] arr;
+    private int length;
+    private int capacity;
+
+    public DynamicArray(int capacity) {
+        this.capacity = capacity;
+        this.length = 0;
+        this.arr = new int[capacity];
+    }
+
+    public int get(int i) {
+        return arr[i];
+    }
+
+    public void set(int i, int n) {
+        this.arr[i] = n;
+    }
+
+    public void pushback(int n) {
+        if(length == capacity){
+            this.resize();
+        }
+        arr[length] = n;
+        length++;
+    }
+
+    public int popback() {
+        int val = arr[length - 1];
+        length--;
+        return val;
+    }
+
+    public void resize() {
+        capacity = 2 * capacity;
+        int[] newArr = new int[capacity];
+
+        for(int i = 0; i<length; i++){
+            newArr[i] = arr[i];
+        }
+
+        arr = newArr;
+    }
+
+    public int getSize() {
+        return length;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+}
+
